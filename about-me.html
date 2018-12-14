@@ -2,20 +2,34 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <!-- My CSS styles -->
+        <link rel="stylesheet" href="style.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
         <title>About Me - JaidenRM</title>
     </head>
     <body class="about-me">
         <!-- NAVIGATION MENU -->
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
+        <nav class="navbar navbar-expand-sm bg-light navbar-light justify-content-center fixed-top">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
-                <li>
-                    <a href="resume.html">Resume</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">About Me</a>
                 </li>
-                <li>
-                    <a href="personal-projects.html">Personal Projects</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="resume.html">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="personal-projects.html">Personal Projects</a>
                 </li>
             </ul>
         </nav>
@@ -62,13 +76,19 @@
             </p>
         </div>
         <footer>
-            <figure>
-                <a href="https://github.com/JaidenRM" target="_blank">
-                    <img src="images/github-mark-32px.png" alt="GitHub Profile Link"/>
-                </a>
-                <img src="images/gmail-50px.png" alt="Gmail icon"/>
-                <figcaption>jaidenreecemuscat@gmail.com</figcaption>
-            </figure>
+            <div class="col-sm-12">
+                <ul class="footer-nav">
+                    <li>
+                        <a href="https://github.com/JaidenRM" target="_blank">
+                            <img src="images/github-mark-32px.png" alt="GitHub Profile Link"/>
+                        </a>
+                    </li>
+                    <li class="gmail">
+                        <img src="images/gmail-50px.png" alt="Gmail icon"/>
+                        <span>jaidenreecemuscat@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
         </footer>
     </body>
 </html>
