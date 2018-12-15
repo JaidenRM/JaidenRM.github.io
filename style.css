@@ -63,7 +63,7 @@
 }
 
 .about-me .subheading {
-    margin-left: 20px;
+    margin-left: -30px;
     margin-top: 20px;
 }
 
@@ -156,3 +156,12 @@ body.resume {
 }
 
 /* PERSONAL PROJECTS styles */
+.personal-projects {
+    margin-top: 75px;
+}
+
+#myWebsiteCarousel img {
+    width: 30%;
+    margin: auto;
+    margin-top: 15px;
+}
