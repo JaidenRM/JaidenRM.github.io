@@ -7,9 +7,11 @@
 
 /* GLOBAL footer styles */
 
-.gmail img{
+#gmail {
     width: 40px;
     height: auto;
+    margin-left: 30px;
+    margin-top: -3px;
 }
 
 .bg-custom {
