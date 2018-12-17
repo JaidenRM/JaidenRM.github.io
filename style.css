@@ -12,6 +12,7 @@
     height: auto;
     margin-left: 30px;
     margin-top: -3px;
+<<<<<<< HEAD
 }
 
 label {
@@ -30,6 +31,8 @@ label {
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+=======
+>>>>>>> 25192e90be0c74ea95ec9b1c047b3af3dd5ec00a
 }
 
 .bg-custom {
