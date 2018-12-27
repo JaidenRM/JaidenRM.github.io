@@ -12,7 +12,6 @@
     height: auto;
     margin-left: 30px;
     margin-top: -3px;
-<<<<<<< HEAD
 }
 
 label {
@@ -31,8 +30,6 @@ label {
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-=======
->>>>>>> 25192e90be0c74ea95ec9b1c047b3af3dd5ec00a
 }
 
 .bg-custom {
@@ -69,7 +66,14 @@ label {
     left: -50%;
     min-width: 100%;
     min-height: 150%;
-    opacity: 0.5;
+    opacity: 0.35;
+}
+
+#rndImgCap {
+    background-color: white;
+    border: 2px black solid;
+    margin-top: 10px;
+    border-radius: 5px;
 }
 
 /* ABOUT ME Styles */
@@ -315,4 +319,5 @@ label {
         width: 100vw;
         height: auto;
     }
+
 }
