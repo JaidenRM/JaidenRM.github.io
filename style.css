@@ -52,6 +52,7 @@ label {
 .home .jumbotron img {
     border: 2px black solid;
     border-radius: 5px;
+    visibility: hidden;
 }
 
 .home span {
@@ -74,6 +75,7 @@ label {
     border: 2px black solid;
     margin-top: 10px;
     border-radius: 5px;
+    visibility: hidden;
 }
 
 /* ABOUT ME Styles */

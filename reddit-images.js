@@ -1,14 +1,17 @@
+
+
 $(document).ready(function() {
     getRedditJSON();
 })
 
 function getRedditJSON() {
+
     $.ajax({
         method: 'GET',
         dataType: 'json',
         url: 'https://www.reddit.com/r/softwaregore/hot.json?limit=100',
         success: onSuccess,
-        error: function(err) { console.log(err) }
+        error: onError
     })
 }
 
@@ -21,6 +24,7 @@ function onSuccess(redditJson) {
     var giveUp = false;
     var jumboImage = document.getElementById("rndImg");
     var jumboImageCaption = document.getElementById("rndImgCap");
+
 
     //ten attempts to find a post with an image
     while (attempts > 0) {
@@ -57,5 +61,17 @@ function onSuccess(redditJson) {
         }
         jumboImageCaption.innerHTML = caption + "<br><i>- A random image grabbed from r/softwaregore";
     }
+    jumboImage.onload = function() {
+        jumboImage.style.visibility = "visible";
+        jumboImageCaption.style.visibility = "visible";
+    }
 
+}
+
+function onError() {
+    console.log(err);
+    var jumboImage = document.getElementById("rndImg");
+    var jumboImageCaption = document.getElementById("rndImgCap");
+    jumboImage.style.visibility = "visible";
+    jumboImageCaption.style.visibility = "visible";
 }
