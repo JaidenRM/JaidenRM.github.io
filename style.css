@@ -9,7 +9,7 @@
     display: none; /* shouldn't be seen at first */
     position: fixed; /* stay in place on the screen */
     z-index: 100; /* should be on top of everything */
-    padding-top: 100px;
+    padding-top: 80px;
     left: 0;
     right: 0;
     width: 100%;
@@ -41,7 +41,7 @@
     position: absolute;
     width: 40vw;
     height: 100vh;
-    z-index: 10;
+    z-index: 0;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

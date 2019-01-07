@@ -1,11 +1,26 @@
-//$("test").hover(function() {
-//    var imgHovered = //make img become more transparent
-//})
+//used to darken images when hovered to show they can be clicked on
+// to active the modal image
+$(function() {
+    var latestImg;
+    $(".carousel").hover(function() {
+        var imgHovered = $(this).find('img');
+        latestImg = imgHovered;
+        console.log(imgHovered);
+        imgHovered.css("opacity", 0.8);
+        $(".test").css("z-index", 10);
+    })
+    $(".carousel").mouseleave(function() {
+        latestImg.css("opacity", 1);
+        $(".test").css("z-index", 0);
+    })
+})
 
 //find active image in the clicked on carousel
 function activeImage(id) {
-    var carousel = document.getElementById(id);
-    var src = $('.active').find('img').attr('src');
+    var carousel = $(id);
+    var active = carousel.find('.active');
+    console.log(active);
+    var src = $('.active', carousel).find('img').attr('src');
     return src;
 }
 //set the img for the modal
