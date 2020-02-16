@@ -1,4 +1,4 @@
-
+var gDebug = 0;
 
 $(document).ready(function() {
     getRedditJSON();
@@ -41,22 +41,24 @@ function onSuccess(redditJson) {
     var pic = redditJson.data.children[rndNum].data.preview.images[0].source.url;
     //gets rid of the encoding on '&' which would return a 403 err otherwise
     pic = pic.replace(/amp;/ig, '');
-    console.log(pic);
+    //debug section
+    if(gDebug) console.log(pic);
+    //
     if(!giveUp) {
         var windowPerc = 0.5;
-        console.log(jumboImage.width > window.innerWidth);
-        console.log(jumboImage.height > window.innerHeight);
+        if(gDebug) console.log(jumboImage.width > window.innerWidth);
+        if(gDebug) console.log(jumboImage.height > window.innerHeight);
         jumboImage.src = pic;
         if(jumboImage.width > window.innerWidth ||
         jumboImage.height > window.innerHeight) {
             windowPerc = 0.9;
         }
         if(jumboImage.width > jumboImage.height) {
-            console.log("width GREATER THAN height");
+            if(gDebug) console.log("width GREATER THAN height");
             jumboImage.width = windowPerc*window.innerWidth;
         }
         else {
-            console.console.log("width LESSER THAN height");
+            if(gDebug) console.console.log("width LESSER THAN height");
             jumboImage.width = windowPerc*window.innerHeight;
         }
         jumboImageCaption.innerHTML = caption + "<br><i>- A random image grabbed from r/softwaregore";
